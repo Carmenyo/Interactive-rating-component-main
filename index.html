@@ -2,48 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/main.css">
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+<div class="card">
+  <img src="./images/icon-star.svg" alt="Icono estrella">
 
-  <!-- Rating state start -->
+    <h1 class="title">How did we do?</h1>
+    <p class="paragraph"> Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
 
-  How did we do?
+  <ul class="list">
+    <li class="item">1</li>
+    <li class="item">2</li>
+    <li class="item">3</li>
+    <li class="item">4</li>
+    <li class="item">5</li>
+</ul>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+<button id="btn-Submit" class="btnSubmit">Submit</button>
 
-  1 2 3 4 5
+</div>
 
-  Submit
-
-  <!-- Rating state end -->
 
   <!-- Thank you state start -->
+<div class="card hidden" >
 
-  You selected <!-- Add rating here --> out of 5
+<img src="./images/illustration-thank-you.svg" alt="Gracias">
 
-  Thank you!
+<p id="number-selected">You selected <span></span> out of 5</p>
+<h1 class=title> Thank you!</h1>
+<p class="paragraph">  We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+</div>
 
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
