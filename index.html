@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="./styles/main.css">
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div class="card">
+      <img src="./images/icon-star.svg" alt="Icono estrella" />
 
-</head>
-<body>
-<div class="card">
-  <img src="./images/icon-star.svg" alt="Icono estrella">
+      <h1 class="title">How did we do?</h1>
+      <p class="paragraph">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
 
-    <h1 class="title">How did we do?</h1>
-    <p class="paragraph"> Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!</p>
+      <ul class="list">
+        <li class="items">1</li>
+        <li class="items">2</li>
+        <li class="items">3</li>
+        <li class="items">4</li>
+        <li class="items">5</li>
+      </ul>
 
-  <ul class="list">
-    <li class="item">1</li>
-    <li class="item">2</li>
-    <li class="item">3</li>
-    <li class="item">4</li>
-    <li class="item">5</li>
-</ul>
+      <button id="btn-Submit" class="btnSubmit">Submit</button>
+    </div>
 
-<button id="btn-Submit" class="btnSubmit">Submit</button>
+    <!-- Thank you state start -->
+    <div class="card hidden">
+      <img src="./images/illustration-thank-you.svg" alt="Gracias" />
 
-</div>
+      <p id="number-selected">You selected <span></span> out of 5</p>
+      <h1 class="title">Thank you!</h1>
+      <p class="paragraph">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
 
-
-  <!-- Thank you state start -->
-<div class="card hidden" >
-
-<img src="./images/illustration-thank-you.svg" alt="Gracias">
-
-<p id="number-selected">You selected <span></span> out of 5</p>
-<h1 class=title> Thank you!</h1>
-<p class="paragraph">  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!</p>
-
-</div>
-
-<script type="text/javascript" src="./main.js"></script>
-</body>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>
