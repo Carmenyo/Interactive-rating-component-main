@@ -1,0 +1,137 @@
+@import "./core/variables";
+@import "./core/reset";
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family:"Overpass", sans-serif;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: $color-dark-blue ;
+    margin: 0 20px;
+  }
+  
+  
+  
+  .wrapper {
+  height: 26rem;
+  background: linear-gradient(120deg, $color-dark-blue, $color-very-dark-blue);
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  
+  }
+  .wrapper-star{
+    background-color: $color-dark-blue;
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    
+  }
+  .icon-star{
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+  
+  .title{
+    color: $color-white;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+  .paragraph{
+    color: $color-light-grey;
+    line-height: 1.8rem;
+    font-size: .85rem;
+    letter-spacing: .02rem;
+    margin-bottom: 1.5rem;
+  }
+  .rating-list{
+    display: flex;
+    justify-content: space-around;
+  }
+  .button-number{
+    background-color: $color-dark-blue;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100px;
+    color: $color-light-grey;
+    margin-bottom: .5rem;
+  }
+  
+  .button-number:hover{
+    background-color: $color-orange;
+    color: $color-white;
+  }
+  .button-wrapper{
+    text-align: center;
+  }
+  .button-rating{
+    background-color: $color-orange;
+    width: 95%;
+    border-radius: 30px;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 0.8em;
+    margin-top: 20px;
+  }
+  .button-rating:hover{
+  background-color: $color-white;
+  color: $color-orange;
+  cursor: pointer;
+  }
+
+
+// Thank you
+
+  .thanks__wrapper{
+    height: 26rem;
+    width: 26rem;
+      background: linear-gradient(120deg, $color-dark-blue, $color-very-dark-blue);
+      padding:3rem 1.5rem;
+      border-radius: 1rem;
+      
+      }
+  .thanks__image{
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .thanks__selected{
+    color: $color-orange;
+   
+   
+  }
+  .selected__wrapper{
+    background-color: $color-dark-blue;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .thanks__title{
+    color: $color-white;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .thanks__paragraph{
+    font-size: .8rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.3rem;
+    color: $color-medium-grey;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  @media (min-width:768px){
+    .wrapper{
+      width: 400px;
+    }
+  }

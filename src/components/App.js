@@ -1,6 +1,7 @@
-import {useState} from "react"
-import star from "./images/icon-star.svg"
-import thanks from "./images/illustration-thank-you.svg"
+import {useState} from "react";
+import star from "../images/icon-star.svg";
+import thanks from "../images/illustration-thank-you.svg";
+import "../styles/App.scss"
 
 function App() {
   const [submitted, setSubmitted] = useState(false)
