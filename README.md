@@ -2,9 +2,7 @@
 
 An interactive customer service rating component project completed as part of the Frontend Mentor challenges. This project involves building a component that allows users to rate a customer service experience. After submitting the rating, a popup window appears to thank the user. The project is developed using React, HTML5, CSS3, and JavaScript to provide a seamless and engaging user interaction.
 
-![Normal](./src/images/Solution%201.png)
-![Response](./src/images/Solution%202.png)
-
+![Normal](./src/images/Neutral%20Minimal%20Shadow%20Photographer%20Frame%20Mockup%20Pinterest%20Pin.png)
 
 ## Features
 
